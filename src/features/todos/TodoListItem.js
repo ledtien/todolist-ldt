@@ -52,6 +52,7 @@ const TodoListItem = ({ id }) => {
             type="checkbox"
             checked={completed}
             onChange={handleCompletedChanged}
+            style={{ cursor: 'pointer' }}
           />
           <div className="todo-text">{text}</div>
         </div>
@@ -59,7 +60,7 @@ const TodoListItem = ({ id }) => {
           <select
             className="colorPicker"
             value={color}
-            style={{ color }}
+            style={{ color, cursor: 'pointer' }}
             onChange={handleColorChanged}
           >
             <option value=""></option>
