@@ -53,6 +53,7 @@ const ColorFilters = ({ value: colors, onChange }) => {
           name={color}
           checked={checked}
           onChange={handleChange}
+          style={{ cursor: 'pointer' }}
         />
         <span
           className="color-block"
